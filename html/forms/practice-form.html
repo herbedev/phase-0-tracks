@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Form</title>
+</head>
+<body>
+  <section>
+    <h1>Practice Form</h1>
+    <div>
+      <form action="success.html" id="practice-form" method="post" name="practice-form">
+        <fieldset>
+          <div>
+            <label>Favorite Ice Cream:</label> <select name="favoriteIceCream">
+              <option value="vanilla">
+                Vanilla
+              </option>
+              <option value="chocolate">
+                Chocolate
+              </option>
+              <option value="other">
+                Other
+              </option>
+            </select>
+          </div>
+          <div>
+            <label>Full name:</label> <input name="fullName" type="text">
+          </div>
+          <div>
+            <label>Email:</label> <input name="email" type="email">
+          </div>
+          <div>
+            <label>Password:</label> <input name="password" type="password">
+          </div>
+          <div>
+            <label>Choose Your Birthday:</label> <input name="birthDate" type="date">
+          </div>
+          <div>
+            <label>Tell us a little about yoruself below:</label><br>
+            <textarea rows="4" cols="50" name="personalInformation"></textarea>
+          </div>
+          <div>
+            <input name="cb-formSubmit" type="checkbox" value="agree"> I am ready to submit this form.
+          </div><button type="submit">Submit This Form</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
