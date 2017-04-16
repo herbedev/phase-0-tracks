@@ -1,0 +1,16 @@
+.octopus {
+    margin: 50px auto;
+    display: block;
+    /*position: static;*/
+}
+.hat {
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+.glasses {
+    position: absolute;
+    left: 45%;
+    top: 153px;
+}
