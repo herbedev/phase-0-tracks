@@ -1,0 +1,38 @@
+#contact-info p {
+    font-size: .8em;
+}
+
+section.job {
+    background: #e9e5dc;
+    border-radius: 5px;
+    margin: 10px 15px;
+    padding: 5px 15px;
+}
+
+.unorderd-list {
+  font-size: .8em;
+}
+
+
+/*Example of Cascading Style Sheets - will only rules defined above will take precendence */
+
+.job {
+  background: white;
+}
+
+/* pseudoselector example */
+
+section.job:hover {
+  background: white;
+  border:1px solid green;
+}
+
+/*Release 2.3 */
+
+section section {
+    outline: 1px solid red;
+}
+
+ul li {
+    text-decoration: underline;
+}
