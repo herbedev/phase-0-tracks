@@ -2,10 +2,9 @@ Elevator Instructions
 - Push the up arrow and wait for the elevator to arrive. (Assuming the robot starts on the base level)
 - Enter the elevator
 - Select the desired floor. 
-	- If you are hungry and want to get something to eat select floor 2 and wait for 	the doors to close.
-	- If you need to study and want to go to the library select floor 3 and wait for
-	the doors to close. 
-	- If you want to go to sleep, and go to your room select floor 4 and wait for the 	doors to close. 
+	- If you are hungry and want to get something to eat select floor 2 and wait for the doors to close.
+	- If you need to study and want to go to the library select floor 3 and wait for the doors to close. 
+	- If you want to go to sleep, and go to your room select floor 4 and wait for the doors to close. 
 - Once the elevator reaches your desired floor exit the elevator and go about your activity.  
 
 Brushing your teeth
