@@ -1,0 +1,41 @@
+html {
+    font-family: Helvetica;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    background: #eaeaea;
+}
+
+header p {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+footer {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    clear: both;
+    padding-bottom: 20px;
+}
+.column-1, .column-2 {
+    width: 49%;
+    float: left;
+    background: #ccc;
+    min-height: 1300px;
+    border-radius: 5px;
+    margin:5px;
+}
+.column-2 article, .column-1 article {
+    margin: 20px;
+    background: #eee;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
