@@ -1,7 +1,7 @@
 # PSEUDOCODE
 # 1. Initalize Hash
 # 2. Ask the designer / user for all of the required information
-# 3. Comvert any user input to the appropriate data type
+# 3. Convert any user input to the appropriate data type
 # 4. Print the hash back out to the screen when the designer has answered all of the questions
 # 5. Give the user the opportunity to update a key (no need to loop) If the designer says "none", skip it
 # 	5.1 If the user responds with no, proceed to the end.
@@ -10,6 +10,16 @@
 #  		5.22 Replace value in that key with the new user input
 # 6. Print the latest version of the hash, and exit the program.
 
+# True False Method
+
+def true_or_false (answer)
+  if answer == "y"
+    true
+  elsif answer == "n"
+    false
+  else nil
+  end
+end
 
 # 1. Initalize Hash
 
@@ -31,3 +41,6 @@ p "What is your client's budget?"
 	interior_design_form[:budget] = gets.chomp
 p "Is it okay to go over budget? (y/n)" 
 	interior_design_form[:budget_over] = gets.chomp
+	# Runs user input through previously defined true_or_false method.
+	interior_design_form[:budget_over] = true_or_false(interior_design_form[:budget_over])
+
