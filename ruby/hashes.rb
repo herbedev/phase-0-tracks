@@ -44,3 +44,8 @@ p "Is it okay to go over budget? (y/n)"
 	# Runs user input through previously defined true_or_false method.
 	interior_design_form[:budget_over] = true_or_false(interior_design_form[:budget_over])
 
+# 4. Print the hash back out to the screen when the designer has answered all of the questions
+
+p interior_design_form
+
+
