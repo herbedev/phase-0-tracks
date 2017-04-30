@@ -10,5 +10,24 @@
 #  		5.22 Replace value in that key with the new user input
 # 6. Print the latest version of the hash, and exit the program.
 
+
 # 1. Initalize Hash
 
+interior_design_form = {}
+
+# 2. Ask the designer / user for all of the required information
+
+p "What is your client's name?"
+	interior_design_form[:name] = gets.chomp
+p "What is your client's age?"
+	interior_design_form[:age] = gets.chomp
+p "How many children does your client have?"
+	interior_design_form[:number_of_children] = gets.chomp
+p "What decor theme would you like?"
+	interior_design_form[:decor_theme] = gets.chomp
+p "What is your client's phone number?"
+	interior_design_form[:phone_number] = gets.chomp
+p "What is your client's budget?"
+	interior_design_form[:budget] = gets.chomp
+p "Is it okay to go over budget? (y/n)" 
+	interior_design_form[:budget_over] = gets.chomp
