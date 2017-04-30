@@ -46,6 +46,26 @@ p "Is it okay to go over budget? (y/n)"
 
 # 4. Print the hash back out to the screen when the designer has answered all of the questions
 
-p interior_design_form
+p interior_design_form.each{|key, value| p "#{key}: #{value}"} 
 
+# 5. Give the user the opportunity to update a key (no need to loop) If the designer says "none", skip it
+p "Above is what you entered would you like to change anything? (y/n)"
+change_input = gets.chomp
 
+	if change_input ==  "y"
+		p "Here are the form field names and current values, please enter a single form field name to change it"
+		interior_design_form.each{|key, value| p "#{key}: #{value}"} 
+		#5.21 Have the user enter the corresponding key (update_input)
+		update_input = gets.chomp.to_sym
+		p "What would you like to change this to?"
+		new_input = gets.chomp
+		#5.22 Replace value in that key with the new user input
+		interior_design_form[update_input] = new_input
+		p "Here is your new form"
+		# 6. Print the latest version of the hash, and exit the program.
+		interior_design_form.each{|key, value| p "#{key}: #{value}"} 
+	else
+		p "Here is your final form"
+		# 6. Print the latest version of the hash, and exit the program.
+		interior_design_form.each{|key, value| p "#{key}: #{value}"} 
+	end
