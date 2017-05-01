@@ -60,4 +60,35 @@ end
 puts fib(10)
 puts fib(100)
 
+# Release 2
+
+# Remove first integer from unsorted array to prevent duplicates in output.
+# Begin loop
+# Compare value at index 0 in unsorted array to reference in sorted array.
+# If unsorted value is smaller than sorted value, insert at sorted index value
+# If unsorted value is larger than sorted value, insert after sorted index.
+# Increase sorted index by 1.
+# End loop.
+
+
+def array_sorting(unsorted_array)
+  sorted_array = [unsorted_array[0]]
+  unsorted_array.delete_at(0)
+  unsorted_array.each do |unsorted_item|
+    sorted_index = 0
+    while sorted_index < sorted_array.length
+      if unsorted_item <= sorted_array[sorted_index]
+        sorted_array.insert(sorted_index, unsorted_item)
+        break
+      elsif sorted_index == sorted_array.length - 1
+        sorted_array.insert(sorted_index + 1, unsorted_item)
+        break
+      end
+      sorted_index += 1
+    end
+  end
+  p sorted_array
+end
+
+
 
