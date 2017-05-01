@@ -35,3 +35,29 @@ end
 
 p search_array(arr, 23)
 
+# Release 1 Calculate Fibonacci Numbers
+
+def fib(number)
+	loop_counter = 0
+	fib_array = []
+	next_num = 0
+
+		while loop_counter < number
+			if loop_counter == 0
+				fib_array << 0
+			elsif loop_counter == 1
+				fib_array << 1
+			elsif loop_counter >= 1
+				next_num = fib_array[-1] + fib_array[-2]
+				fib_array << next_num
+			else
+			end #End If
+			loop_counter += 1
+		end # End while
+	return fib_array
+end
+
+puts fib(10)
+puts fib(100)
+
+
