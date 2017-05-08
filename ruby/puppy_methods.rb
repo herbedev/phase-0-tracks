@@ -33,19 +33,62 @@ class Puppy
   	puts "Puppy has sit down"
   end
 
+  #initialize Puppy method that runs every time there is a new instance of the puppy class
+  def initialize
+  	puts "Initializing new puppy instance ..."
+  end
+
 end
 
 
-# Driver Code
-# initializes new instance of puppy
-poodle = Puppy.new
-# Verify that the instance can now fetch a ball
-poodle.fetch("ball")
-# Verify that the method that takes an integer, and then prints "Woof!" that many times.
-poodle.speak(3)
-# Verify that the roll_over method prints out "Roll over puppy"
-poodle.roll_over
-# Verify that the dogs years method takes an integer(human years) and converts it into dog years
-poodle.dog_years(3)
-# Verify that the puppy can sit
-poodle.sit
+# # Puppy Driver Code
+# # initializes new instance of puppy
+# poodle = Puppy.new
+# # Verify that the instance can now fetch a ball
+# poodle.fetch("ball")
+# # Verify that the method that takes an integer, and then prints "Woof!" that many times.
+# poodle.speak(3)
+# # Verify that the roll_over method prints out "Roll over puppy"
+# poodle.roll_over
+# # Verify that the dogs years method takes an integer(human years) and converts it into dog years
+# poodle.dog_years(3)
+# # Verify that the puppy can sit
+# poodle.sit
+
+class Video_Games
+  #Initalize method
+  def initialize
+  	puts "Initializing new video game instance ..."
+  end
+  #Level Method
+  def level(user_level)
+  	puts "You are on level #{user_level}"
+  end
+  #Score Method
+  def score(user_score)
+  	puts "You have finished the game with a score of #{user_score}"
+  end
+
+end
+# Video Games Driver Code
+# initializes new instance of video games
+super_mario = Video_Games.new
+# Verifys the instance can now output the user level
+super_mario.level(3)
+# Verifys the instance can now output the user score
+super_mario.score(500)
+
+
+# Initalize Array to hold instances of class
+Video_Games_Array = []
+
+# Use a loop to make 50 instances of your class.
+50.times do
+	Video_Games_Array << Video_Games.new
+end
+
+Video_Games_Array.each do |x|
+	# x.initialize
+	x.level(3)
+	x.score(500)
+end
