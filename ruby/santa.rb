@@ -5,8 +5,8 @@ class Santa
   	@gender = gender
   	@ethnicity = ethnicity
   	@age = 0
-  	reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
   	puts "Initializing Santa instance #{@gender}, #{@ethnicity} ..."
+	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
   end
 
@@ -20,7 +20,34 @@ class Santa
   	puts "That was a good #{cookie_type}"
   end
 
+  # Birthday method that changes santa's age by one year
+  def celebrate_birthday
+  	@age = @age +1
+  	@age
+  end
+
+  # Get mad at method that moves that reindeer to last place in the rankings
+  def get_mad_at(reindeer_name)
+  	@reindeer_ranking.delete(reindeer_name)
+  	@reindeer_ranking.insert(-1, reindeer_name)
+  end
+
+  #Setter method for @gender to be reassigned from outside the class definition
+  def gender=(new_gender)
+  	@gender = new_gender
+  end
+
+  #Getter methods for @age and @ethnicity
+  def age
+  	@age
+  end
+
+  def ethnicity
+  	@ethnicity
+  end
+
 end
+
 
 # Release 0 Driver code
 # santa_one = Santa.new
@@ -45,6 +72,17 @@ example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer n
 example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
+
+# Release 2 Driver code
+
+# Set a new gender from outside the class
+p santas[1].gender = "NEW GENDER"
+# Change a santas age from outside the class
+p santas[1].celebrate_birthday
+# Move the reindeer rudolph to the end of the reindeer rankings
+p santas[0].get_mad_at("Rudolph")
+p santas[1].age
+p santas[1].ethnicity
 
 
 
