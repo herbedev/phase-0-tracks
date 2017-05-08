@@ -1,5 +1,9 @@
 class Santa
 
+  # Refactor with attr_reader & attr_accessor
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
+
   #initialize method
   def initialize(gender, ethnicity)
   	@gender = gender
@@ -32,19 +36,19 @@ class Santa
   	@reindeer_ranking.insert(-1, reindeer_name)
   end
 
-  #Setter method for @gender to be reassigned from outside the class definition
-  def gender=(new_gender)
-  	@gender = new_gender
-  end
+  # #Setter method for @gender to be reassigned from outside the class definition
+  # def gender=(new_gender)
+  # 	@gender = new_gender
+  # end
 
-  #Getter methods for @age and @ethnicity
-  def age
-  	@age
-  end
+  # #Getter methods for @age and @ethnicity
+  # def age
+  # 	@age
+  # end
 
-  def ethnicity
-  	@ethnicity
-  end
+  # def ethnicity
+  # 	@ethnicity
+  # end
 
 end
 
@@ -81,8 +85,12 @@ p santas[1].gender = "NEW GENDER"
 p santas[1].celebrate_birthday
 # Move the reindeer rudolph to the end of the reindeer rankings
 p santas[0].get_mad_at("Rudolph")
+# Get santas age
 p santas[1].age
+# Get santas ethnicity
 p santas[1].ethnicity
+
+
 
 
 
