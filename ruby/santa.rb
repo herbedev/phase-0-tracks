@@ -1,15 +1,15 @@
 class Santa
 
-  # Refactor with attr_reader & attr_accessor
-  attr_reader :age, :ethnicity
-  attr_accessor :gender
+  # Refactor with attr_reader & attr_accessor to remove getter + setter methods
+  attr_reader :ethnicity
+  attr_accessor :gender, :age
 
   #initialize method
   def initialize(gender, ethnicity)
   	@gender = gender
   	@ethnicity = ethnicity
   	@age = 0
-  	puts "Initializing Santa instance #{@gender}, #{@ethnicity} ..."
+  	puts "Initializing Santa instance..."
 	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
   end
@@ -70,25 +70,41 @@ end
 # santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 # santas << Santa.new("N/A", "N/A")
 
-santas = []
-example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
-end
+# santas = []
+# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# example_genders.length.times do |i|
+#   santas << Santa.new(example_genders[i], example_ethnicities[i])
+# end
 
 # Release 2 Driver code
 
-# Set a new gender from outside the class
-p santas[1].gender = "NEW GENDER"
-# Change a santas age from outside the class
-p santas[1].celebrate_birthday
-# Move the reindeer rudolph to the end of the reindeer rankings
-p santas[0].get_mad_at("Rudolph")
-# Get santas age
-p santas[1].age
-# Get santas ethnicity
-p santas[1].ethnicity
+# # Set a new gender from outside the class
+# p santas[1].gender = "NEW GENDER"
+# # Change a santas age from outside the class
+# p santas[1].celebrate_birthday
+# # Move the reindeer rudolph to the end of the reindeer rankings
+# p santas[0].get_mad_at("Rudolph")
+# # Get santas age
+# p santas[1].age
+# # Get santas ethnicity
+# p santas[1].ethnicity
+
+# Release 4 Driver code
+
+# p example_genders.sample
+# p example_ethnicities.sample
+# p rand(140)
+
+
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+50.times do
+	santas = Santa.new(example_genders.sample, example_ethnicities.sample)
+	santas.age = rand(140)
+	puts "This santa is #{santas.ethnicity}, #{santas.gender} and #{santas.age} years old."
+end
 
 
 
