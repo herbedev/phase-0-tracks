@@ -1,0 +1,35 @@
+Pseudocode
+
+Start Game
+	
+	User 1 enters a word to be guessed
+
+	- Store secret word 
+	- Set guess limit by secret word.length x 1.5
+	- Split word into an array of letters
+
+	User 2 enters a letter to be guesssed
+
+	- check if letter is already stored in guessed_letters array
+		- If letter is not in guessed_letters arrray
+			- letter is stored in an array to prevent duplicate guesses
+
+		UNTIL guess_count >= guess_limit || secret_word_status = revealed
+
+			- If letter is not contained in secret word
+				- Taunting error message...
+				- Guess_count +1
+				- Print out secret word with symbols "_ _ _ _ _ _ _"
+			
+			- If the letter is contained in the secret word 
+				- Congratulate the user
+				- Guess_count +1
+				- Print out secret word with symbols "_ _ _ _ _ _ _"
+
+
+	- If the user guesses the correct word
+		-  Congratulate them 
+	- If the user does not guess the secret word
+		- Taunting error message
+
+
