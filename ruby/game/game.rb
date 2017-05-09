@@ -1,14 +1,16 @@
 class Game
-  attr_accessor :secret_word, :secret_word_letters, :guess_limit, :guess_counter
+  attr_accessor :secret_word, :secret_word_letters, :guess_limit, :guess_counter, :game_over
   
   # initialize method
   def initialize(secret_word)
     @word = secret_word
   	@secret_word = []
     @word_letters = []
- 	  @guess_limit = 0
- 	  @guess_counter = 0
- 	  p "initializing game instance"
+ 	@guess_limit = 0
+ 	@guess_counter = 0
+ 	@guessed_letters = []
+ 	@game_over = FALSE
+ 	p "initializing game instance"
   end
   
   # split_secret_word method that splits user input into an array of letters
@@ -28,7 +30,7 @@ class Game
   
   # set guess limit
   def set_guess_limit
-    @guess_limit = @word.length * 2 
+    @guess_limit = @word.length * 2
   end
   
   #method for guessing letters from secret word
@@ -40,18 +42,36 @@ class Game
     end
   end
   
+  def guess_counter(letter)
+  	if @guessed_letters.include?(letter) 
+  		@guess_counter
+  	else
+  		@guess_counter += 1
+  	end
+    if @guess_counter >= @guess_limit
+      @game_over = TRUE
+    else
+      @game_over = FALSE
+    end
+  end
+
   #method for replacing letters
   def replace_letter(letter)
     if @word_letters == @secret_word
       return "You hav won"
     elsif !@word_letters.include?(letter)
-      p "Sorry no match heres the word  #{@secret_word}"
+      p "Sorry no match heres the word: #{@secret_word}"
     elsif @word_letters.include?(letter)
-        puts "Here's your updated word! #{@secret_word.join}"
+        puts "Here's your updated word! #{@secret_word.join(" ")}"
     end
   end
   
 end
+
+# while game.gameover == FALSE
+  
+# end
+
 
 #initialize new instance of game
 game1 = Game.new("baseball")
@@ -61,8 +81,8 @@ p game1.split_secret_word("baseball")
 p game1.encrypt_secret_word
 # test if set_guess_limit works
 p game1.set_guess_limit
- p game1.guess_letter("b")
- p game1.replace_letter("b")
+p game1.guess_letter("b")
+#p game1.replace_letter("b")
  
 
 
