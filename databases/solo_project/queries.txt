@@ -1,0 +1,51 @@
+1. Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM fighters
+   ...> ;
+1|Jack|true|1
+2|John|true|2
+3|Jimmy|false|2
+4|Josh|true|4
+sqlite>
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE fighters SET name="JohnNew" WHERE name="John";
+sqlite> SELECT * FROM fighters
+   ...> ;
+1|Jack|true|1
+2|JohnNew|true|2
+3|Jimmy|false|2
+4|Josh|true|4
+sqlite>
+
+
+3.  Display the information in both tables using one query.
+
+sqlite> SELECT * FROM fighters, weightclasses WHERE fighters.weightclass = weightclasses.id;
+1|Jack|true|1|1|Strawweight|115
+2|John|true|2|2|Flyweight|125
+3|Jimmy|false|2|2|Flyweight|125
+4|Josh|true|4|4|Featherweight|145
+sqlite>
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT fighters.name, weightclasses.name FROM fighters JOIN weightclasses ON fighters.weightclass = weightclasses.id;
+Jack|Strawweight
+John|Flyweight
+Jimmy|Flyweight
+Josh|Featherweight
+sqlite>
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+
+sqlite> DELETE FROM fighters WHERE active="false";
+sqlite> SELECT * FROM fighters
+   ...> ;
+1|Jack|true|1
+2|JohnNew|true|2
+4|Josh|true|4
+sqlite>
+
