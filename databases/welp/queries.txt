@@ -1,0 +1,167 @@
+2. You've joined two tables before. How do you join three?
+
+sqlite> SELECT * FROM users JOIN reviews JOIN businesses
+   ...> ;
+1|Bradford|Pitt|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+1|Bradford|Pitt|1|5|Great food|1|1|2|Amir's Towing
+1|Bradford|Pitt|1|5|Great food|1|1|3|The Beagle Nightclub
+1|Bradford|Pitt|1|5|Great food|1|1|4|Lotus Yoga
+1|Bradford|Pitt|1|5|Great food|1|1|5|Plumbing by Janet
+1|Bradford|Pitt|1|5|Great food|1|1|6|Sushi World
+1|Bradford|Pitt|1|5|Great food|1|1|7|JoeBob's Sports Barn
+1|Bradford|Pitt|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+1|Bradford|Pitt|2|3|Ehh food|2|2|2|Amir's Towing
+1|Bradford|Pitt|2|3|Ehh food|2|2|3|The Beagle Nightclub
+1|Bradford|Pitt|2|3|Ehh food|2|2|4|Lotus Yoga
+1|Bradford|Pitt|2|3|Ehh food|2|2|5|Plumbing by Janet
+1|Bradford|Pitt|2|3|Ehh food|2|2|6|Sushi World
+1|Bradford|Pitt|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+1|Bradford|Pitt|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+1|Bradford|Pitt|3|3|Ehh food|2|1|2|Amir's Towing
+1|Bradford|Pitt|3|3|Ehh food|2|1|3|The Beagle Nightclub
+1|Bradford|Pitt|3|3|Ehh food|2|1|4|Lotus Yoga
+1|Bradford|Pitt|3|3|Ehh food|2|1|5|Plumbing by Janet
+1|Bradford|Pitt|3|3|Ehh food|2|1|6|Sushi World
+1|Bradford|Pitt|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+2|Mandy|Kailing|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+2|Mandy|Kailing|1|5|Great food|1|1|2|Amir's Towing
+2|Mandy|Kailing|1|5|Great food|1|1|3|The Beagle Nightclub
+2|Mandy|Kailing|1|5|Great food|1|1|4|Lotus Yoga
+2|Mandy|Kailing|1|5|Great food|1|1|5|Plumbing by Janet
+2|Mandy|Kailing|1|5|Great food|1|1|6|Sushi World
+2|Mandy|Kailing|1|5|Great food|1|1|7|JoeBob's Sports Barn
+2|Mandy|Kailing|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+2|Mandy|Kailing|2|3|Ehh food|2|2|2|Amir's Towing
+2|Mandy|Kailing|2|3|Ehh food|2|2|3|The Beagle Nightclub
+2|Mandy|Kailing|2|3|Ehh food|2|2|4|Lotus Yoga
+2|Mandy|Kailing|2|3|Ehh food|2|2|5|Plumbing by Janet
+2|Mandy|Kailing|2|3|Ehh food|2|2|6|Sushi World
+2|Mandy|Kailing|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+2|Mandy|Kailing|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+2|Mandy|Kailing|3|3|Ehh food|2|1|2|Amir's Towing
+2|Mandy|Kailing|3|3|Ehh food|2|1|3|The Beagle Nightclub
+2|Mandy|Kailing|3|3|Ehh food|2|1|4|Lotus Yoga
+2|Mandy|Kailing|3|3|Ehh food|2|1|5|Plumbing by Janet
+2|Mandy|Kailing|3|3|Ehh food|2|1|6|Sushi World
+2|Mandy|Kailing|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+3|Angela|Jolie|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+3|Angela|Jolie|1|5|Great food|1|1|2|Amir's Towing
+3|Angela|Jolie|1|5|Great food|1|1|3|The Beagle Nightclub
+3|Angela|Jolie|1|5|Great food|1|1|4|Lotus Yoga
+3|Angela|Jolie|1|5|Great food|1|1|5|Plumbing by Janet
+3|Angela|Jolie|1|5|Great food|1|1|6|Sushi World
+3|Angela|Jolie|1|5|Great food|1|1|7|JoeBob's Sports Barn
+3|Angela|Jolie|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+3|Angela|Jolie|2|3|Ehh food|2|2|2|Amir's Towing
+3|Angela|Jolie|2|3|Ehh food|2|2|3|The Beagle Nightclub
+3|Angela|Jolie|2|3|Ehh food|2|2|4|Lotus Yoga
+3|Angela|Jolie|2|3|Ehh food|2|2|5|Plumbing by Janet
+3|Angela|Jolie|2|3|Ehh food|2|2|6|Sushi World
+3|Angela|Jolie|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+3|Angela|Jolie|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+3|Angela|Jolie|3|3|Ehh food|2|1|2|Amir's Towing
+3|Angela|Jolie|3|3|Ehh food|2|1|3|The Beagle Nightclub
+3|Angela|Jolie|3|3|Ehh food|2|1|4|Lotus Yoga
+3|Angela|Jolie|3|3|Ehh food|2|1|5|Plumbing by Janet
+3|Angela|Jolie|3|3|Ehh food|2|1|6|Sushi World
+3|Angela|Jolie|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+4|Steven|Wonder|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+4|Steven|Wonder|1|5|Great food|1|1|2|Amir's Towing
+4|Steven|Wonder|1|5|Great food|1|1|3|The Beagle Nightclub
+4|Steven|Wonder|1|5|Great food|1|1|4|Lotus Yoga
+4|Steven|Wonder|1|5|Great food|1|1|5|Plumbing by Janet
+4|Steven|Wonder|1|5|Great food|1|1|6|Sushi World
+4|Steven|Wonder|1|5|Great food|1|1|7|JoeBob's Sports Barn
+4|Steven|Wonder|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+4|Steven|Wonder|2|3|Ehh food|2|2|2|Amir's Towing
+4|Steven|Wonder|2|3|Ehh food|2|2|3|The Beagle Nightclub
+4|Steven|Wonder|2|3|Ehh food|2|2|4|Lotus Yoga
+4|Steven|Wonder|2|3|Ehh food|2|2|5|Plumbing by Janet
+4|Steven|Wonder|2|3|Ehh food|2|2|6|Sushi World
+4|Steven|Wonder|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+4|Steven|Wonder|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+4|Steven|Wonder|3|3|Ehh food|2|1|2|Amir's Towing
+4|Steven|Wonder|3|3|Ehh food|2|1|3|The Beagle Nightclub
+4|Steven|Wonder|3|3|Ehh food|2|1|4|Lotus Yoga
+4|Steven|Wonder|3|3|Ehh food|2|1|5|Plumbing by Janet
+4|Steven|Wonder|3|3|Ehh food|2|1|6|Sushi World
+4|Steven|Wonder|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+5|Holly|Berry|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+5|Holly|Berry|1|5|Great food|1|1|2|Amir's Towing
+5|Holly|Berry|1|5|Great food|1|1|3|The Beagle Nightclub
+5|Holly|Berry|1|5|Great food|1|1|4|Lotus Yoga
+5|Holly|Berry|1|5|Great food|1|1|5|Plumbing by Janet
+5|Holly|Berry|1|5|Great food|1|1|6|Sushi World
+5|Holly|Berry|1|5|Great food|1|1|7|JoeBob's Sports Barn
+5|Holly|Berry|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+5|Holly|Berry|2|3|Ehh food|2|2|2|Amir's Towing
+5|Holly|Berry|2|3|Ehh food|2|2|3|The Beagle Nightclub
+5|Holly|Berry|2|3|Ehh food|2|2|4|Lotus Yoga
+5|Holly|Berry|2|3|Ehh food|2|2|5|Plumbing by Janet
+5|Holly|Berry|2|3|Ehh food|2|2|6|Sushi World
+5|Holly|Berry|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+5|Holly|Berry|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+5|Holly|Berry|3|3|Ehh food|2|1|2|Amir's Towing
+5|Holly|Berry|3|3|Ehh food|2|1|3|The Beagle Nightclub
+5|Holly|Berry|3|3|Ehh food|2|1|4|Lotus Yoga
+5|Holly|Berry|3|3|Ehh food|2|1|5|Plumbing by Janet
+5|Holly|Berry|3|3|Ehh food|2|1|6|Sushi World
+5|Holly|Berry|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+6|Meryl|Streepman|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+6|Meryl|Streepman|1|5|Great food|1|1|2|Amir's Towing
+6|Meryl|Streepman|1|5|Great food|1|1|3|The Beagle Nightclub
+6|Meryl|Streepman|1|5|Great food|1|1|4|Lotus Yoga
+6|Meryl|Streepman|1|5|Great food|1|1|5|Plumbing by Janet
+6|Meryl|Streepman|1|5|Great food|1|1|6|Sushi World
+6|Meryl|Streepman|1|5|Great food|1|1|7|JoeBob's Sports Barn
+6|Meryl|Streepman|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+6|Meryl|Streepman|2|3|Ehh food|2|2|2|Amir's Towing
+6|Meryl|Streepman|2|3|Ehh food|2|2|3|The Beagle Nightclub
+6|Meryl|Streepman|2|3|Ehh food|2|2|4|Lotus Yoga
+6|Meryl|Streepman|2|3|Ehh food|2|2|5|Plumbing by Janet
+6|Meryl|Streepman|2|3|Ehh food|2|2|6|Sushi World
+6|Meryl|Streepman|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+6|Meryl|Streepman|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+6|Meryl|Streepman|3|3|Ehh food|2|1|2|Amir's Towing
+6|Meryl|Streepman|3|3|Ehh food|2|1|3|The Beagle Nightclub
+6|Meryl|Streepman|3|3|Ehh food|2|1|4|Lotus Yoga
+6|Meryl|Streepman|3|3|Ehh food|2|1|5|Plumbing by Janet
+6|Meryl|Streepman|3|3|Ehh food|2|1|6|Sushi World
+6|Meryl|Streepman|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+7|Denzyl|George|1|5|Great food|1|1|1|Grundy Hollow Wedding Chapel
+7|Denzyl|George|1|5|Great food|1|1|2|Amir's Towing
+7|Denzyl|George|1|5|Great food|1|1|3|The Beagle Nightclub
+7|Denzyl|George|1|5|Great food|1|1|4|Lotus Yoga
+7|Denzyl|George|1|5|Great food|1|1|5|Plumbing by Janet
+7|Denzyl|George|1|5|Great food|1|1|6|Sushi World
+7|Denzyl|George|1|5|Great food|1|1|7|JoeBob's Sports Barn
+7|Denzyl|George|2|3|Ehh food|2|2|1|Grundy Hollow Wedding Chapel
+7|Denzyl|George|2|3|Ehh food|2|2|2|Amir's Towing
+7|Denzyl|George|2|3|Ehh food|2|2|3|The Beagle Nightclub
+7|Denzyl|George|2|3|Ehh food|2|2|4|Lotus Yoga
+7|Denzyl|George|2|3|Ehh food|2|2|5|Plumbing by Janet
+7|Denzyl|George|2|3|Ehh food|2|2|6|Sushi World
+7|Denzyl|George|2|3|Ehh food|2|2|7|JoeBob's Sports Barn
+7|Denzyl|George|3|3|Ehh food|2|1|1|Grundy Hollow Wedding Chapel
+7|Denzyl|George|3|3|Ehh food|2|1|2|Amir's Towing
+7|Denzyl|George|3|3|Ehh food|2|1|3|The Beagle Nightclub
+7|Denzyl|George|3|3|Ehh food|2|1|4|Lotus Yoga
+7|Denzyl|George|3|3|Ehh food|2|1|5|Plumbing by Janet
+7|Denzyl|George|3|3|Ehh food|2|1|6|Sushi World
+7|Denzyl|George|3|3|Ehh food|2|1|7|JoeBob's Sports Barn
+sqlite>
+
+3. There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+
+sqlite> SELECT first_name, last_name, name, stars, comment
+   ...> FROM users, reviews, businesses
+   ...> WHERE reviews.user_id = users.id AND reviews.business_id = businesses.id;
+Bradford|Pitt|Grundy Hollow Wedding Chapel|5|Great food
+Mandy|Kailing|Amir's Towing|3|Ehh food
+Bradford|Pitt|Amir's Towing|3|Ehh food
+sqlite>
+
+4. sqlite> SELECT * FROM users, businesses, reviews WHERE reviews.user_id = users.id AND reviews.business_id = businesses.id AND businesses.name = "Grundy Hollow Wedding Chapel";
+1|Bradford|Pitt|1|Grundy Hollow Wedding Chapel|1|5|Great food|1|1
+sqlite>
+
