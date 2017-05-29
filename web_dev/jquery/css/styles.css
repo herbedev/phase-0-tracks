@@ -1,0 +1,8 @@
+.meme-img:hover {
+  cursor: pointer;
+}
+.center {
+  margin: 5px auto;
+  display: block;
+  text-align: center;
+}
