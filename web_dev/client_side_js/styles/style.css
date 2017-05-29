@@ -1,0 +1,16 @@
+#gif {
+  display: none;
+}
+h1, h2 {
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* I created a function to do this even though it could be done through simple CSS */
+/*
+img:hover {
+  cursor: pointer;
+}*/
